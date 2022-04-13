@@ -79,7 +79,7 @@ VALUES
   
 INSERT INTO SpotifyClone.artista (artist)
 VALUES
-  ('Walter Phoenix1'),
+  ('Walter Phoenix'),
   ('Peter Strong'),
   ('Lance Day'),
   ('Freedie Shannon'),
