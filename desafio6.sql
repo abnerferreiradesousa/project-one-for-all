@@ -1,8 +1,9 @@
 SELECT
-	ROUND(MIN(P.valor), 2) AS faturamento_minimo,
-    ROUND(MAX(P.valor), 2) AS faturamento_maximo,
-    ROUND(AVG(P.valor), 2) AS faturamento_medio,
-    ROUND(SUM(P.valor), 2) AS faturamento_total
+    -- FORMAT(N, D, locale)
+	FORMAT(MIN(P.valor), 2) AS faturamento_minimo,
+    FORMAT(MAX(P.valor), 2) AS faturamento_maximo,
+    FORMAT(AVG(P.valor), 2) AS faturamento_medio,
+    FORMAT(SUM(P.valor), 2) AS faturamento_total
 FROM SpotifyClone.usuarios AS U
 INNER JOIN SpotifyClone.planos AS P
 ON U.plano_id = P.plano_id;
