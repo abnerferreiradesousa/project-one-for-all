@@ -9,5 +9,5 @@ SELECT
 	END AS novo_nome
 FROM SpotifyClone.musicas
 GROUP BY nome_musica
-HAVING novo_nome <> nome_musica
-ORDER BY nome_musica, novo_nome;
+HAVING nome_musica <> novo_nome
+ORDER BY novo_nome, nome_musica;
