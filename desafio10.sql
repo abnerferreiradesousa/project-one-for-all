@@ -7,4 +7,5 @@ ON U.usuario_id = H.usuario_id
 JOIN SpotifyClone.musicas AS M
 ON H.musica_id = M.musica_id
 WHERE plano_id IN (1, 3)
-GROUP BY nome;
+GROUP BY nome
+ORDER BY nome;
